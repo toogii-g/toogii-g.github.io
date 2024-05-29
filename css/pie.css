@@ -1,0 +1,31 @@
+h1,h2,h3,h4,h5 {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+}
+h1 {
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+}
+h2,h3,h4,h5 {
+    text-align:  left;
+    font-size: 18pt;
+}
+body {
+    background-color: #FFFFFF;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, serif;
+}
+:any-link {
+    color: #A4A400;
+}
+.deleted-word {
+    text-decoration: line-through;
+}
+.user-quote{
+    font-style: italic;
+    background-color: #FFFFA8;
+}
