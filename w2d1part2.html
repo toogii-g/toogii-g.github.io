@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/w2d1part2.css" rel="stylesheet">
+    <title>W2D1 Part2</title>
+</head>
+<body>
+    <h1>FP & Regex</h1>
+    <div>
+        <form>
+            <fieldset id="container">
+                <div class="form-group">
+                    <label for="email" class="label">Email Address</label>
+                    <input type="email" class="inputs" id="email" name="email" placeholder="Enter email"
+                    title="Email must be valid pattern">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="label">Password</label>
+                    <input type="password" class="inputs" id="password" name="password" placeholder="Password" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{10,}$" 
+                    title="Password must be atleast 10 characters in length and contains at least one number, one uppercase, and one lowercase letter.">
+                </div>
+                <div class="form-group">
+                    <label for="url" class="label">Url</label>
+                    <input type="url" class="inputs" id="url" name="url" placeholder="url" pattern="https?://.+" 
+                    title="url must be valid pattern">
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="checkmeOut" name="checkmeOut" value="checkmeOut">
+                    <label for="checkmeOut">Check me out</label>
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="submit" onclick="validate()" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

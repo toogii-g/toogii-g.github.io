@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout Example</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #container {
+            display: grid;
+            grid-template-areas:
+                'some text text'
+                'some here there';
+            height: 150px;
+            
+        }
+
+        #some {
+            grid-area: some;
+            background-color: #7a7a7a;
+        }
+
+        #text {
+            grid-area: text;
+            background-color: #636363;
+        }
+
+        #here {
+            grid-area: here;
+            background-color: #afafaf;
+        }
+
+        #there {
+            grid-area: there;
+            background-color: #929292;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="some">some</div>
+        <div id="text">text</div>
+        <div id="here">here</div>
+        <div id="there">there</div>
+    </div>
+</body>
+</html>

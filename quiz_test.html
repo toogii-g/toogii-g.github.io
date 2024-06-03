@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 3</title>
+    <script src="">
+        function shortest(a, b, c) {
+            if (a.length < b.length && a.length < c.length) {
+                return a;
+            } else if (b.length < a.length && b.length < c.length) {
+                return b;
+            } else {
+                return c;
+            }
+        }
+
+        function testShortest() {
+            const result = shortest("a", "cc", "ddd");
+            alert("The longest string is: " + result);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="testShortest()">Test shortest Function</button>
+</body>
+</html>
