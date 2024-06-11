@@ -3,7 +3,7 @@
 class CheckingAccount extends Account{
     constructor(number, overDraftLimit) {
         super(number);
-        this.overDraftLimit = overDraftLimit; 
+        this._overDraftLimit = overDraftLimit; 
     }
 
     get overDraftLimit(){
@@ -15,19 +15,19 @@ class CheckingAccount extends Account{
     }
 
     withdraw(amount){
-        if(!((super.deposit-amount) < this.overDraftLimit)){
+        if(!((super.deposit-amount) < this._overDraftLimit)){
             deposit= this.deposit - amount;
         }
     }
 
     toString(){
-        return super.toString() + " OverDraftLimit: " + this.overDraftLimit;
+        return super.toString() + " OverDraftLimit: " + this._overDraftLimit;
     }
 
     endOfMonth() {
         if (this.balance < 0) {
-            return `Warning, low balance CheckingAccount ${this.number}: balance: ${this.balance} overdraft limit: ${this._overdraftLimit}`;
+            return "Warning, low balance CheckingAccount ${this.number}: balance: ${this.balance} overdraft limit: ${this._overdraftLimit}";
         }
-        return '';
+        return "";
     }
 }
