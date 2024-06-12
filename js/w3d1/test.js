@@ -9,7 +9,7 @@ describe('Account', () => {
     });
 
     it('should get the account number', () => {
-        expect(account.number).to.equal(0.0);
+        expect(account.number).to.equal(1);
     });
 
     it('should get the account balance', () => {
