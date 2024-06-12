@@ -4,11 +4,10 @@ $(document).ready(function(){
     $("#start").click(function(){
         if(start===true){
             $(".boundary").removeClass('youlose');
-            $("#status").text('Click the "S" to begin.');
-            
+            $("#status").text('Go!');
         }
-            fault=false;
-            start=true;
+        fault=false;
+        start=true;
         $(".boundary").mouseover(function(){
             if(start===true){
                 $(".boundary").addClass('youlose');
@@ -36,8 +35,7 @@ $(document).ready(function(){
         });
     
         $(".boundary").removeClass('youlose');
-        $("#status").text('Click the "S" to begin.');
+        $("#status").text('Go!');
         
     });
-
 });
