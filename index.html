@@ -1,15 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Togi's Home Page</title>
-    </head>
-    <body>
-        <h1>Togi</h1>
-        <img class="images" src="images/portrait.png" alt="Portrait">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Togtokhbayar "Togi" Gendensuren, Software Engineer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+        p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .skills, .certifications, .languages {
+            margin-top: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills li, .certifications li, .languages li {
+            background-color: #e2e2e2;
+            display: inline-block;
+            margin: 5px;
+            padding: 8px 12px;
+            border-radius: 4px;
+            color: #333;
+        }
+        .linkedin-link, .email-link, .github-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #0a66c2;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .linkedin-link:hover, .email-link:hover, .github-link:hover {
+            background-color: #004182;
+        }
+    </style>
+</head>
+<body>
 
-        <a href="https://validator.w3.org/nu/?doc=https://toogii-g.github.io">
-            <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
-            alt="validate html"></a>
-    </body>
+<div class="container">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hello! My name is Togtokhbayar Gendensuren, but you can call me Togi. I’m a passionate and driven Software Engineer focused on creating efficient, scalable, and reliable software, with a strong foundation in Java, Spring Boot, AWS, and database management.</p>
+    
+    <p>Throughout my career, I’ve been privileged to work on diverse projects, from high-traffic enterprise applications to complex backend systems, ensuring high performance and resilience. Here, you'll find an overview of my technical skills, recent projects, and accomplishments.</p>
+
+    <a href="https://www.linkedin.com/in/togi" class="linkedin-link" target="_blank">Connect with me on LinkedIn</a>
+    <a href="mailto:togi.gendensuren@gmail.com" class="email-link">Contact Me via Email</a>
+    <a href="https://github.com/toogii-g" class="github-link" target="_blank">View My GitHub</a>
+    
+    <h2>Skills</h2>
+    <ul class="skills">
+        <li>Java & Spring Boot</li>
+        <li>AWS & Cloud Services</li>
+        <li>Microservices & APIs</li>
+        <li>Database Management (MySQL, DynamoDB)</li>
+        <li>System Design & Scalability</li>
+        <li>CI/CD & DevOps</li>
+    </ul>
+
+    <h2>Certifications</h2>
+    <ul class="certifications">
+        <li><a href="https://www.credly.com/badges/37ca3da5-b988-4854-bde7-f37cc8e1b74b/public_url" target="_blank">AWS Certified Solutions Architect – Associate</a></li>
+        <li><a href="https://www.credly.com/badges/2aaa7bf8-535c-461e-b74d-4c92442cf461/public_url" target="_blank">AWS Certified Cloud Practitioner</a></li>
+        <li><a href="https://drive.google.com/file/d/1aV2pHLx2ai_qEGFdVjik8OHcWC-rmsF_/view?usp=sharing" target="_blank">Certified Scrum Master</a></li>
+        <li><a href="https://drive.google.com/file/d/1A62A9KePbNRKKnfiX4vEbltbhWayqUeE/view?usp=sharing" target="_blank">Certified Scrum Product Owner</a></li>
+    </ul>
+
+    <h2>Languages</h2>
+    <ul class="languages">
+        <li>English (Fluent)</li>
+        <li>Japanese (Fluent)</li>
+        <li>Mongolian (Fluent)</li>
+    </ul>
+</div>
+
+</body>
 </html>
